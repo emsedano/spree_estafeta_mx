@@ -3,8 +3,10 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_estafeta_mx'
   s.version     = '2.2.8'
-  s.summary     = 'estafeta waybills creation and monitoring for shipped status services integration with spreecommerce'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Estafeta waybills creation and monitoring for shipped status services integration with spreecommerce'
+  s.description = 'Estafeta web services integration, this enable to the store to request waybills and be assigned to shipments'
+  s.description += ' in ready status and that has not already a waybill assigned. it also contains an action to perform queries'
+  s.description += ' regarding to already marked as shipped by Estafeta'
   s.required_ruby_version = '>= 1.9.3'
 
    s.author    = 'Jose Elias Martínez Sedano'
