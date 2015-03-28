@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_estafeta_mx'
   s.version     = '2.2.8'
-  s.summary     = 'TODO: Add gem summary here'
+  s.summary     = 'estafeta waybills creation and monitoring for shipped status services integration with spreecommerce'
   s.description = 'TODO: Add (optional) gem description here'
   s.required_ruby_version = '>= 1.9.3'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+   s.author    = 'Jose Elias Martínez Sedano'
+   s.email     = 'eliasmsedano@gmail.com'
+   s.homepage  = 'https://github.com/emsedano/spree_estafeta_mx'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
