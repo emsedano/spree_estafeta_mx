@@ -13,7 +13,8 @@ class Spree::Admin::EstafetaController <  ApplicationController
 			file_name = "#{response.label_request_list.first.result_description}"
 			
 			#temp_file = Tempfile.create( file_name, 'tmp/estafeta_waybills')
-			temp_file = File.new("public/spree/estafeta_waybills/#{file_name}", 'w')
+			path_for_waybills = Rails.application.config.estafeta_service[:path_for_waybills]
+			temp_file = File.new("#{path_for_waybills}/#{file_name}", 'w')
 			
 			decoded_data = Base64.decode64(response.label_pdf)
    		File.open(temp_file, 'wb') {|f| f.write(decoded_data)}	

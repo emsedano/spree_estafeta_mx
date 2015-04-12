@@ -48,12 +48,17 @@ class EstafetaService
     begin
       
       response = @request_label_client.call(:create_label, :message => message, response_parser: :rexml)
-
+      
     rescue Exception => e
       #deliver a failure mail
+      puts e
     end
 
-    parse_label_response response
+    if response.present?
+      parse_label_response response 
+    else
+      nil
+    end
 
   end
   
